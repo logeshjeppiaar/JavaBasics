@@ -4,13 +4,13 @@ package com.logesh.cloneTest;
  * @author Logesh
  *
  */
-public class EmployeeAssignTest {
+public class AssignEmployeeObjTest {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
 
 		Employee emp1 = new Employee("logesh", 1);
 
-		Employee emp2 = (Employee) emp1.clone();
+		Employee emp2 = emp1;
 
 		System.out.println("Before chagnes, emp1 :" + emp1);
 		System.out.println("Before chagnes, emp2 :" + emp2);
@@ -30,8 +30,8 @@ public class EmployeeAssignTest {
 //			Before chagnes, emp1 :Employee [name=logesh, id=1]
 //			Before chagnes, emp2 :Employee [name=logesh, id=1]
 //			After name chagnes, emp1 :Employee [name=mukesh, id=1]
-//			After name chagnes, emp2 :Employee [name=logesh, id=1]
-//			After Oho name chagnes, emp1 :Employee [name=mukesh, id=1]
+//			After name chagnes, emp2 :Employee [name=mukesh, id=1]
+//			After Oho name chagnes, emp1 :Employee [name=Oho, id=1]
 //			After Oho name chagnes, emp2 :Employee [name=Oho, id=1]
 
 }
